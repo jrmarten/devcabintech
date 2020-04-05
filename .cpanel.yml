@@ -2,8 +2,9 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/devctlwr/public_html/
+    - export DEPLOYSTYLESPATH=/home/devctlwr/public_html/styles/
     - /bin/cp src/index.html $DEPLOYPATH
     - /bin/cp src/index.js $DEPLOYPATH
-    - /bin/cp src/styles/style.css $DEPLOYPATH
-    - /bin/cp src/styles/style.sass $DEPLOYPATH
-    - /bin/cp src/styles/style.scss $DEPLOYPATH
+    - /bin/cp src/styles/style.css $DEPLOYSTYLESPATH
+    - /bin/cp src/styles/style.sass $DEPLOYSTYLESPATH
+    - /bin/cp src/styles/style.scss $DEPLOYSTYLESPATH
