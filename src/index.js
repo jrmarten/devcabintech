@@ -1,13 +1,13 @@
-import {
-    hello,
-    tes
-} from './scripts/import-example';
+// import {
+//     hello,
+//     tes
+// } from './scripts/import-example';
 
-import './styles/style.css';
-import './styles/style.scss';
-import './styles/style.sass';
+// import './styles/style.css';
+// import './styles/style.scss';
+// import './styles/style.sass';
 
-hello();
+// hello();
 
 // async function run() {
 //   const value = await tes();
