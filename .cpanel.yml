@@ -2,9 +2,23 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/devctlwr/public_html/
+    - export DEPLOYCONFIGPATH=/home/devctlwr/public_html/config/
     - export DEPLOYSTYLESPATH=/home/devctlwr/public_html/styles/
     - /bin/cp src/index.html $DEPLOYPATH
     - /bin/cp src/index.js $DEPLOYPATH
     - /bin/cp src/styles/style.css $DEPLOYSTYLESPATH
     - /bin/cp src/styles/style.sass $DEPLOYSTYLESPATH
     - /bin/cp src/styles/style.scss $DEPLOYSTYLESPATH
+    - /bin/cp config/webpack.dev.js $DEPLOYCONFIGPATH
+    - /bin/cp config/webpack.prod.js $DEPLOYCONFIGPATH
+    - /bin/cp node_modules $DEPLOYPATH
+    - /bin/cp .babelrc $DEPLOYPATH
+    - /bin/cp .eslintrc.json $DEPLOYPATH
+    - /bin/cp .gitignore $DEPLOYPATH
+    - /bin/cp .cpanel.yml $DEPLOYPATH
+    - /bin/cp LICENSE $DEPLOYPATH
+    - /bin/cp package.json $DEPLOYPATH
+    - /bin/cp package-lock.json $DEPLOYPATH
+    - /bin/cp postcss.config.js $DEPLOYPATH
+    - /bin/cp prettierrc.json $DEPLOYPATH
+    - /bin/cp README.md $DEPLOYPATH
