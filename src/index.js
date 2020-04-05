@@ -108,11 +108,11 @@ var init = function (e) {
     burger.addEventListener('click', openMenu, false);
     window.addEventListener('scroll', scrollFx, false);
     window.addEventListener('load', scrollFx, false);
-    if (e.classList.includes('scroll-down')) {
+    // if (e.classList.includes('scroll-down')) {
 
-    } else {
-        $('a[href^="#"]').on('click', scrolly);
-    }
+    // } else {
+    //     $('a[href^="#"]').on('click', scrolly);
+    // }
 
 };
 
